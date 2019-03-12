@@ -1,0 +1,473 @@
+html,
+body {
+  align-items: center;
+  background-color: #f8f8f8 !important;
+  color: #333;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./components/img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.title {
+  background-color: #640a73d6;
+  color: white;
+  margin: 0 650px;
+  border-radius: 15px;
+  padding: 18px 0;
+}
+
+.hourlytitle {
+  margin-top: 10px;
+}
+
+.How {
+  text-shadow: 2px 2px #ef4bc9;
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.HowTo {
+  border: 4px solid #d01077;
+  background-color: #220358;
+  color: whitesmoke;
+  margin: 65px 350px 15px 350px;
+  padding: 12px;
+  font-size: 25px;
+  line-height: 38.5px;
+  text-align: justify;
+}
+
+#root {
+  width: 98%;
+}
+
+.ul {
+  list-style-type: none;
+  border-radius: 7px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #8b4aff;
+  background-color: #8b4aff;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.App {
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  width: 100vw;
+}
+
+hr {
+  border-top: 3px dashed #8a0230;
+  margin-left: 100px;
+}
+
+.inline-input {
+  align-items: flex-start;
+  display: flex;
+  margin: 0 0 1.5rem 0;
+  line-height: 0;
+}
+
+.daily-inline-input {
+  align-items: flex-start;
+  display: flex;
+  margin: 0.5rem 0 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inline-input:focus-within {
+  border-bottom: 1px dotted #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.location-sign-daily {
+  margin: 55px 0 0 822px;
+  line-height: 0;
+}
+
+.location-sign {
+  margin-top: 7px;
+}
+
+.inline-input .mdi {
+  color: #fff;
+  padding: 0.2rem 0.5rem 0 0;
+}
+
+.location-input {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 50px;
+  color: darkblue;
+  outline: none;
+  padding-bottom: 0.3rem;
+}
+
+.main-display {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: space-around;
+}
+
+.main-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  order: 0;
+  width: 1%;
+}
+
+.temp-measurement {
+  color: #8a0230;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.temp-unit,
+.temp-unit-hourly {
+  color: #8a0230;
+  vertical-align: top;
+}
+
+.temp-unit-hourly {
+  font-size: 30px;
+}
+
+.sub-info {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 0.4rem 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 0 0 3rem;
+  order: 1;
+}
+
+.sub-info-hourly {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #333;
+  margin: -1.1rem 0 0.5rem 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-order: 1;
+  order: 1;
+}
+
+.sub-info-text,
+.sub-info-title {
+  font-size: 2.5rem;
+  margin: 0 0 0.3rem 0;
+  text-align: start;
+  font-weight: bold;
+  color: #d81054;
+  text-shadow: 3px 3px #64094f;
+}
+
+.sub-info-title-hourly {
+  font-size: 2.5rem;
+  margin: -1.2rem 0 0.3rem 0;
+  font-weight: bold;
+  color: #d81054;
+  text-shadow: 3px 3px #64094f;
+}
+
+.sub-info-des,
+.sub-info-text {
+  text-transform: capitalize;
+}
+
+.CurrentDate {
+  float: left;
+  font-weight: bold;
+  color: #00008b;
+  text-shadow: 2px 2px #de14af;
+  font-size: 40px;
+}
+
+.CurrentTime,
+.DateTime {
+  float: right;
+  font-weight: bold;
+  color: #00008b;
+  text-shadow: 2px 2px #de14af;
+  font-size: 29px;
+}
+
+.DateTime {
+  margin-top: -90px;
+}
+
+strong {
+  float: right;
+  margin-top: -790px;
+  color: #710771;
+  line-height: 20px;
+}
+
+b {
+  color: #710771;
+}
+
+.Time {
+  font-size: 45px;
+  font-weight: bold;
+  float: right;
+  margin-top: -980px;
+  color: #00008b;
+  text-shadow: 2px 2px #de14af;
+}
+.Hourly-Form {
+  line-height: 0;
+}
+
+.max-temp {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.min-temp {
+  color: #8e0635;
+  font-weight: bold;
+}
+.sub-info-text .max-temp {
+  margin: 0 0.5rem 0 -0.1rem;
+}
+
+.selection-panel {
+  margin-left: 200px;
+}
+
+.selection-panel-daily {
+  margin: 0 5rem 5rem 5rem;
+}
+
+.selection-row {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -792px;
+  float: left;
+  margin-left: -135px;
+}
+
+.selection-row-daily {
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0.2rem 0 0 0.5rem;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.selection-days {
+  color: #e3aaec;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.selection-days:hover {
+  color: #fff59d;
+}
+
+.selectiondays {
+  color: #e3aaec;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100px;
+}
+
+.selection-icons {
+  color: #7e1690;
+  font-size: 2.2rem;
+  width: 7.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.selected {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.cloudy {
+  background-image: -webkit-linear-gradient(bottom, #ecbbfb00, #9862f6);
+  background-image: linear-gradient(0deg, #ecbbfb00, #9862f6);
+}
+
+.clear {
+  background-image: -webkit-linear-gradient(bottom, #9c27b021, #ffa1c1);
+  background-image: linear-gradient(0deg, #9c27b021, #ffa1c1);
+}
+
+.snow {
+  background-image: linear-gradient(0deg, #c5cae90f, #26c6da);
+}
+
+.rain {
+  background-image: -webkit-linear-gradient(bottom, #c5cae90f, #72a6c0);
+  background-image: linear-gradient(0deg, #c5cae90f, #72a6c0);
+}
+
+.gify1 {
+  float: right;
+  margin-top: -510px;
+}
+
+.gify3 {
+  float: right;
+  margin: -735px 200px 0 0;
+}
+
+.weather-img {
+  margin-top: -260px;
+}
+
+.thunderstorm {
+  background-image: linear-gradient(0deg, #c5cae90f, #757575);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 18%;
+  background-color: #8b4aff;
+  border-radius: 0 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #763adf;
+}
+
+.card-daily {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 18%;
+  background-color: #8b4aff;
+  border-radius: 10px;
+}
+
+.card-daily:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #763adf;
+}
+
+.daily {
+  padding: 20px 0 20px 0;
+  font-size: 15px;
+  background-color: #450763;
+  border-radius: 10px;
+  border: 3px solid #ff3277;
+}
+
+.daily:hover {
+  padding: 20px 0 20px 0;
+  font-size: 15px;
+  background-color: #180774;
+  border-radius: 10px 70px 10px 10px;
+  border: 3px solid #fa4de3;
+}
+
+.hourly {
+  padding: 3px;
+  font-size: 15px;
+  background-color: #450763;
+  border-radius: 0 15px;
+  border: 2px solid #ff3277;
+}
+.hourly:hover {
+  padding: 3px;
+  font-size: 15px;
+  background-color: #e40373;
+  border-radius: 10px;
+  border: 2px solid #fa4de3;
+  color: white;
+}
+
+a {
+  background-color: #180774 !important;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.75rem;
+  color: white;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26),
+    0 2px 10px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.26);
+  margin: 0.375rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: "Segoe UI", Arial, sans-serif;
+  white-space: normal;
+  word-wrap: break-word;
+}
+a:hover {
+  background-color: #5a0332 !important;
+  color: white;
+  white-space: normal;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: -55px;
+  font-weight: bold;
+  color: #00008b;
+  text-shadow: 2px 2px #de14af;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.location-image-hourly {
+  margin: 0 0 0 390px;
+}
+
+.daily-weather {
+  margin-top: -40px;
+}
