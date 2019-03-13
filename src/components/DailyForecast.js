@@ -215,7 +215,7 @@ class DailyForecast extends Component {
           </div>
         </div>
         <hr />
-        <div className="selection-panel-daily">
+        <div>
           <div className="selection-row-daily">
             {this.state.days.map((item, index) => {
               if (this.state.displayIndex === index) {
@@ -347,7 +347,7 @@ class DailyForecast extends Component {
             })}
           </div>
         </div>
-        <div className="Time">
+        <div className="Current-Time">
           <Clock format={"h:mm:ssa"} ticking={true} />
         </div>
         <div className="weather-img">

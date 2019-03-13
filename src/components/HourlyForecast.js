@@ -239,8 +239,8 @@ class HourlyForecast extends Component {
         </div>
         <div className="gify1">
           <img
-            width="550"
-            height="450"
+            width="420px"
+            height="380px"
             src={"https://media2.giphy.com/media/10ku8RPTtIWa5i/source.gif"}
             aria-hidden
             alt="Weather Image"

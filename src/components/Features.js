@@ -38,7 +38,9 @@ const HowTo = () => (
         5. It can just maintain the current view in the top-level App state.
       </p>
     </div>
-    <WeatherImage />
+    <div className="gify2">
+      <WeatherImage />
+    </div>
   </div>
 );
 
